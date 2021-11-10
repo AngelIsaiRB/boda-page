@@ -1,13 +1,18 @@
 <template>
-  <div class="fixed w-screen h-screen"
+  <div class="w-screen h-screen"
         :class="getIsDay?'bg-white':'bg-black'">
-      <div v-if="getIsDay">
+       <div class="z-20">
+           <PhotosHeaderVue/>
+       </div>
+      <div class="z-10" v-if="getIsDay">
         <ParticlesDayVue/>
       </div>
-      <div v-else>
+      <div class="z-10" v-else>
             <ParticlesStartsVue/>          
       </div>
+      <div class=" w-full h-full z-30">
      <CountDownComponentVue/>
+          </div>      
   </div>
 </template>
 
@@ -16,12 +21,13 @@ import {mapActions, mapGetters} from'vuex'
 import CountDownComponentVue from './CountDownComponent.vue'
 import ParticlesDayVue from './ParticlesDay.vue'
 import ParticlesStartsVue from './ParticlesStarts.vue'
-
+import PhotosHeaderVue from './PhotosHeader.vue'
 export default {
     components: {
         CountDownComponentVue,
         ParticlesStartsVue,
         ParticlesDayVue,
+        PhotosHeaderVue,
     },
     methods: {
         ...mapActions(['onChangeIsDay']),

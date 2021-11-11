@@ -2,7 +2,7 @@
   <div class=" w-screen h-screen"
         :class="getIsDay?'bg-day':'bg-night'">
         <div class="absolute top-0 z-40 w-full flex justify-center pt-20 md:pt-40 dream">
-            <p class="text-3xl sm:text-4xl md:text-5xl xl:text-8xl font-bold neontext "
+            <p class="text-3xl sm:text-4xl md:text-5xl xl:text-8xl font-bold neontext text-center "
                    :class="getIsDay?'text-black bg-white':'text-white bg-black'" >Angel Isai  & Diana Felicitas</p>
         </div>
         <div class="absolute bottom-0 z-40 w-full flex justify-center pb-10 md:pb-20 ">

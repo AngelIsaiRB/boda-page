@@ -4,10 +4,10 @@
           <p class="dodream py-4 md:py-10 text-4xl md:text-6xl text-center">Nuestra Historia</p>
       </div>
       <div class='w-full flex flex-wrap'>
-          <div class='h-60 p-1 w-full md:w-1/2 lg:w-1/3'>
-          <img class="object-cover bg-center w-full h-full" src="../../assets/photos/optimiz/20150508_103138.jpg" alt="">
+          <div class='h-96 p-1 w-full md:w-1/2 lg:w-1/3'>
+          <img class="object-cover bg-center w-full h-full" src="../../assets/photos/optimiz/IMG_0573.jpg" alt="">
            </div>
-          <div class='h-60 p-1 w-full md:w-1/2 lg:w-1/3'>
+          <div class='h-80 p-1 w-full md:w-1/2 lg:w-1/3'>
           <img class="object-cover bg-center w-full h-full" src="../../assets/photos/optimiz/IMG_20190114_174339.jpg" alt="">
             </div>
           <div class='h-60 p-1 w-full md:w-1/2 lg:w-1/3'>

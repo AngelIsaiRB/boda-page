@@ -10,7 +10,7 @@
       <div class="z-10" v-else>
             <ParticlesStartsVue/>          
       </div>
-      <div class=" w-full h-full z-30">
+      <div class=" w-full h-full z-50">
      <CountDownComponentVue/>
           </div>      
   </div>
@@ -38,7 +38,7 @@ export default {
     created () {
         const d = new Date();
         let hour = d.getHours();
-        if(hour<6 || hour>21){
+        if(hour<6 || hour>19){
           this.onChangeIsDay(false)
         }
     },

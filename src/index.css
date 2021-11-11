@@ -5,3 +5,19 @@
 body{
     background-color:white
 }
+
+@font-face {
+    font-family: dream;
+    src: url("./assets/fonts/WhiteDreamPERSONALUSEONLY-Regular.otf");
+}
+@font-face {
+    font-family: dodream;
+    src: url("./assets/fonts/PTSerif-Bold.ttf");
+}
+
+.dream{
+    font-family:dream
+}
+.dodream{
+    font-family:dodream
+}

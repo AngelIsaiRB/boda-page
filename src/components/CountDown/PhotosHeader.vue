@@ -31,53 +31,34 @@ export default {
             screenW: 200,
             screenH:200,
             lastFade:0,
-            completeo:false,
-            completet:false
         }
     },
     methods: {
         runFadeOut() {
            let img =Math.floor(Math.random() * ( 1 - 20) + 20);
-           let timeOne =Math.floor(Math.random() * ( 1 - 3) + 3);
-           let timetw =Math.floor(Math.random() * ( 1 - 3) + 3);
-           let img2 =Math.floor(Math.random() * ( 1 - 20) + 20);
-           if(img===this.lastFade || img2 === img){
+           let time =Math.floor(Math.random() * ( 3 - 6) + 3);
+           if(img===this.lastFade ){
                return this.runFadeOut()
            }
            this.lastFade = img
             gsap.to(`#imge${img}`, {
-                duration: timeOne,
+                duration: time,
                  opacity: 0,
-                 onComplete:()=>{this.runFadeIn(img,1,timeOne)}
-            });
-            gsap.to(`#imge${img2}`, {
-                duration: timetw,
-                 opacity: 0,
-                 onComplete:()=>{this.runFadeIn(img2,2,timetw)}
+                 onComplete:()=>{this.runFadeIn(img,time)}
             });
         },
-        runFadeIn(id,position,time){
+        runFadeIn(id,time){
             gsap.to(`#imge${id}`, {
                 onStart:()=>{
                     let imagen = document.querySelector(`#imge${id}`)
+                    let radius = Math.floor(Math.random() * ( 1 - 3) + 3)
+                    imagen.style.borderRadius = `${radius<2?'10':'150'}px`
                     this.changePosition(imagen)
                 },
                 duration: time,
                  opacity: 0.8,
-                 onComplete:()=>{this.reLauch(position)}
+                 onComplete:()=>{this.runFadeOut()}
             });
-        },
-        reLauch(position){
-            if(position===1){
-                this.completeo=true
-            }else{
-                this.completet=true
-                }
-            if(this.completeo && this.completet){
-                this.completet=false
-                this.completeo=false
-                this.runFadeOut()
-            }
         },
         changePosition(imagen){
            let  x =   Math.floor(Math.random() * ( this.screenW - 0) + 0);
@@ -88,13 +69,23 @@ export default {
 
     },
     mounted () {
+        let imgH = 200
+        let imgW = 150
        this.screenH =  document.querySelector('#canvaImg').clientHeight-200
        this.screenW =  document.querySelector('#canvaImg').clientWidth-150
+       if(this.screenW+150 < 670){
+           imgH= 100
+           imgW= 75
+       }
        for (let index = 1; index <20; index++) {
            let imagen = document.querySelector(`#imge${index}`)
+           imagen.style.width = `${imgW}px`
+           imagen.style.height = `${imgH}px`
           this.changePosition(imagen)
           imagen.style.backgroundImage =`url("./img/pequenas/f${index}.jpg")`;                       
        }
+       this.runFadeOut()
+       this.runFadeOut()
        this.runFadeOut()
        
     },
@@ -110,5 +101,6 @@ export default {
   background-position: center center;
   height: 200px;
   width: 150px;
+  border-radius: 10px;
 }
 </style>

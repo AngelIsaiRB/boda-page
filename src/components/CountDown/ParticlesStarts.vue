@@ -2,8 +2,6 @@
   <div>
       <Particles
                 id="tsparticles"
-                :particlesInit="particlesInit"
-                :particlesLoaded="particlesLoaded"
                 :options='data'
         /></div>  
 </template>

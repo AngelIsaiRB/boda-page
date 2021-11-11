@@ -1,15 +1,17 @@
 <template>
-  <div class="z-50 fixed top-0 right-0  mt-5 mx-1 text-xs font-mono text-white h-6 w-6 rounded-full flex items-center justify-center bg-gray-700 sm:bg-pink-500 md:bg-purple-500 lg:bg-green-500 xl:bg-blue-500">
-  <div class="block  sm:hidden md:hidden lg:hidden xl:hidden">al</div>
-  <div class="hidden sm:block  md:hidden lg:hidden xl:hidden">sm</div>
-  <div class="hidden sm:hidden md:block  lg:hidden xl:hidden">md</div>
-  <div class="hidden sm:hidden md:hidden lg:block  xl:hidden">lg</div>
-  <div class="hidden sm:hidden md:hidden lg:hidden xl:block 2xl:hidden">xl</div>
-  <div class="hidden sm:hidden md:hidden lg:hidden xl:hidden 2xl:block">2xl</div>
+  <div class="z-50 fixed top-0 right-0  mt-5 mx-1 ">
+    <ToggleViewVue/>
 </div>
   <router-view/>
 </template>
-
+<script>
+import ToggleViewVue from './components/utils/ToggleView.vue'
+export default {
+  components: {
+    ToggleViewVue,
+  },
+}
+</script>
 <style>
 
 </style>

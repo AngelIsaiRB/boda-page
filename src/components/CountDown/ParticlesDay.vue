@@ -1,9 +1,7 @@
 <template>
-  <div>
+  <div class="">
       <Particles
                 id="tsparticles"
-                :particlesInit="particlesInit"
-                :particlesLoaded="particlesLoaded"
                 :options='data'
         /></div>  
 </template>
@@ -22,7 +20,7 @@ data() {
       }
     },
     "color": {
-      "value": "#97e8fa"
+      "value": "#ffffff"
     },
     "shape": {
       "type": "circle",
@@ -68,7 +66,7 @@ data() {
     },
     "move": {
       "enable": true,
-      "speed": 1.6,
+      "speed": 0.5,
       "direction": "right",
       "random": false,
       "straight": false,

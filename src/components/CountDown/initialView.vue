@@ -60,7 +60,7 @@ export default {
 text-shadow: 4px 3px 0px #7A7A7A;
 }
 .bg-day{
- background-color: #BFD4DB;
+ background-color: #ffffff;
 }
 .bg-night{
  background-color: #4D535E;

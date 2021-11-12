@@ -20,7 +20,7 @@ data() {
       }
     },
     "color": {
-      "value": "#ffffff"
+      "value": "#efb810"
     },
     "shape": {
       "type": "circle",

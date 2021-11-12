@@ -1,6 +1,6 @@
 <template>
   <!-- Not toggled switch -->
-<div  class="w-full h-full flex flex-col justify-center items-center pr-20">
+<div  class="w-full h-full flex flex-col justify-center items-center pr-2 md:pr-20">
     <div v-if="getIsDay" @click="handleToggleActive" class="flex justify-center items-center cursor-pointer">
     <span class="">
         <svg class="h-6 w-6 text-gray-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -8,9 +8,9 @@
         </svg>
     </span>
     <!-- Switch Container -->
-    <div :class="{ 'bg-cyan-700': getIsDay}" class="w-14 h-7 flex items-center bg-gray-300 rounded-full mx-3 px-1" >
+    <div class="w-14 h-7 flex items-center bg-gray-300 rounded-full mx-3 px-1" >
         <!-- Switch -->
-        <div class="bg-white w-5 h-5 rounded-full shadow-md transform" :class="{ 'translate-x-7': getIsDay}"></div>
+        <div class="bg-white w-5 h-5 rounded-full shadow-md transform translate-x-0"></div>
     </div>
     <span class="">
         <svg class="h-6 w-6 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -19,7 +19,7 @@
     </span>
 </div>
 <!-- Toggled switch -->
-<div v-else @click="handleToggleActive" class="flex justify-center items-center mt-4">
+<div v-else @click="handleToggleActive" class="flex justify-center items-center ">
     <span class="">
         <svg class="h-6 w-6 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />

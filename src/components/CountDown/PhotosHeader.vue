@@ -73,7 +73,9 @@ export default {
         let imgW = 150
        this.screenH =  document.querySelector('#canvaImg').clientHeight-200
        this.screenW =  document.querySelector('#canvaImg').clientWidth-150
-       if(this.screenW+150 < 670){
+       if(document.querySelector('#canvaImg').clientWidth+150 < 670){
+           this.screenH =  document.querySelector('#canvaImg').clientHeight-100
+       this.screenW =  document.querySelector('#canvaImg').clientWidth-75
            imgH= 100
            imgW= 75
        }

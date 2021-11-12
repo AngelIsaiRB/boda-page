@@ -49,7 +49,7 @@ export default {
         const d = new Date();
         let hour = d.getHours();
         if(hour<6 || hour>19){
-          this.onChangeIsDay(false)
+        //   this.onChangeIsDay(false)
         }
     },
 }

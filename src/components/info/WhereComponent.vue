@@ -1,16 +1,16 @@
 <template>
-  <div class="relative z-50 w-screen pastel">
+  <div class="relative z-50 w-screen pastel ">
       <div class="w-full">
           <p class="dodream py-4 md:py-10 text-4xl md:text-6xl text-center">Cuando y Donde</p>
           <p class="dodream py-2 md:py-10 text-2xl md:text-4xl text-center">15 de Enero del 2022</p>          
           <div class="w-full flex">
               <div class="w-1/2 px-6">
-              <p class="dodream py-2 text-base md:text-3xl text-right" >Los votos</p>
+              <p class="dodream py-2 text-base md:text-3xl text-right" >La ceremonia </p>
               <p class="dodream py-2 text-base md:text-3xl text-right" >13:00</p>
               <p class="dodream py-2 text-base md:text-3xl text-right" >Callejon Venustiano Carranza 9 Tlacolula</p>
               </div>
               <div class="w-1/2 px-6 border-l-2 border-black">
-              <p class="dodream py-2 text-base md:text-3xl text-left" >La Fiesta</p>
+              <p class="dodream py-2 text-base md:text-3xl text-left" >La fiesta</p>
               <p class="dodream py-2 text-base md:text-3xl text-left" >15:00</p>
               <p class="dodream py-2 text-base md:text-3xl text-left" >Callejon Venustiano Carranza 9 Tlacolula</p>
               </div>
@@ -29,6 +29,12 @@ export default {
 </script>
 
 <style>
+.bg-flowers{
+ background-image:url('../../assets/photos/optimiz/blur.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center ;
+}
 .pastel{
     background-color:#FAFAF7;
 }

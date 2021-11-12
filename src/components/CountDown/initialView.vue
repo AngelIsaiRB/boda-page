@@ -63,6 +63,6 @@ text-shadow: 4px 3px 0px #7A7A7A;
  background-color: #ffffff;
 }
 .bg-night{
- background-color: #4D535E;
+ background-color: #1e1e1e;
 }
 </style>

@@ -1,6 +1,6 @@
 <template>
   <div class="h-full w-full flex justify-center items-center  ">
-    <div class="absolute z-40 bg-opacity-80" :class="getIsDay?'bg-white':'bg-black'">
+    <div class="absolute z-40 bg-opacity-80 px-4" :class="getIsDay?'bg-white':'bg-black'">
         <div class="flex">
         <div class="mx-2 md:mx-8 h-20 w-20 sm:h-99p sm:w-99p md:w-32 md:h-32  xl:h-163p xl:w-163p bg-fichas rounded-full">
             <div class="w-full h-full flex justify-center items-center">
